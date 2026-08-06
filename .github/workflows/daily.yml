@@ -1,0 +1,36 @@
+name: Scrape diario Poki
+
+on:
+  schedule:
+    # 01:00 UTC = 22:00 horario de Brasilia (sem horario de verao)
+    - cron: "0 1 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Rodar scrape diario
+        run: python run_daily.py
+
+      - name: Commitar banco atualizado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/poki.db
+          git diff --cached --quiet || git commit -m "Atualiza dados do scrape diario ($(date -u +%Y-%m-%d))"
+          git push
