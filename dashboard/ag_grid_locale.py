@@ -1,0 +1,105 @@
+"""Tradução pt-BR para os textos nativos do ag-Grid (menu de coluna, filtros, etc.).
+Fonte: https://github.com/wallace-sf/ag-grid-pt-br (adaptado para dict Python)."""
+
+AG_GRID_LOCALE_PT_BR = {
+    # Set Filter
+    "selectAll": "(Selecionar tudo)",
+    "selectAllSearchResults": "(Selecionar todos os resultados da pesquisa)",
+    "searchOoo": "Pesquisando...",
+    "blanks": "(Em branco)",
+    "noMatches": "Nenhum resultado encontrado",
+    # Number Filter & Text Filter
+    "filterOoo": "Filtrando...",
+    "equals": "Igual a",
+    "notEqual": "Diferente de",
+    "empty": "Vazio",
+    # Number Filter
+    "lessThan": "Menor que",
+    "greaterThan": "Maior que",
+    "lessThanOrEqual": "Menor ou igual a",
+    "greaterThanOrEqual": "Maior ou igual a",
+    "inRange": "Entre",
+    "inRangeStart": "De",
+    "inRangeEnd": "Até",
+    # Sort
+    "sortAscending": "Ordem crescente",
+    "sortDescending": "Ordem decrescente",
+    "sortUnSort": "Limpar ordenação",
+    # Text Filter
+    "contains": "Contém",
+    "notContains": "Não contém",
+    "startsWith": "Começa com",
+    "endsWith": "Termina com",
+    # Date Filter
+    "dateFormatOoo": "dd/mm/yyyy",
+    # Filter Conditions
+    "andCondition": "E",
+    "orCondition": "OU",
+    # Filter Buttons
+    "applyFilter": "Aplicar filtro",
+    "resetFilter": "Redefinir filtro",
+    "clearFilter": "Limpar filtro",
+    "cancelFilter": "Cancelar filtro",
+    # Filter Titles
+    "textFilter": "Filtro de texto",
+    "numberFilter": "Filtro numérico",
+    "dateFilter": "Filtro de data",
+    "setFilter": "Definir filtro",
+    # Side Bar
+    "columns": "Colunas",
+    "filters": "Filtros",
+    # columns tool panel
+    "pivotMode": "Modo de agrupamento",
+    "groups": "Grupos",
+    "rowGroupColumnsEmptyMessage": "Arraste uma coluna para o grupo",
+    "values": "Valores",
+    "valueColumnsEmptyMessage": "Arraste uma coluna para o valor",
+    "pivots": "Agrupamentos",
+    "pivotColumnsEmptyMessage": "Arraste uma coluna para o agrupamento",
+    # Header of the Default Group Column
+    "group": "Grupo",
+    # Other
+    "loadingOoo": "Carregando...",
+    "noRowsToShow": "Nenhum registro para mostrar",
+    "enabled": "Habilitado",
+    # Menu
+    "pinColumn": "Fixar coluna",
+    "pinLeft": "Fixar à esquerda",
+    "pinRight": "Fixar à direita",
+    "noPin": "Não fixar",
+    "valueAggregation": "Agregação de valores",
+    "autosizeThisColumn": "Redimensionar esta coluna",
+    "autosizeAllColumns": "Redimensionar todas as colunas",
+    "groupBy": "Agrupar por",
+    "ungroupBy": "Desagrupar por",
+    "resetColumns": "Redefinir colunas",
+    "expandAll": "Expandir todos",
+    "collapseAll": "Recolher todos",
+    "copy": "Copiar",
+    "ctrlC": "Ctrl+C",
+    "copyWithHeaders": "Copiar com cabeçalhos",
+    "paste": "Colar",
+    "ctrlV": "Ctrl+V",
+    "export": "Exportar",
+    "csvExport": "Exportar para CSV",
+    "excelExport": "Exportar para Excel",
+    # Aggregation / Status Bar
+    "sum": "Soma",
+    "min": "Mínimo",
+    "max": "Máximo",
+    "none": "Nenhum",
+    "count": "Contagem",
+    "avg": "Média",
+    "filteredRows": "Linhas filtradas",
+    "selectedRows": "Linhas selecionadas",
+    "totalRows": "Total de linhas",
+    "totalAndFilteredRows": "Total e linhas filtradas",
+    "more": "Mais",
+    "to": "para",
+    "of": "de",
+    "page": "Página",
+    "nextPage": "Próxima página",
+    "lastPage": "Última página",
+    "firstPage": "Primeira página",
+    "previousPage": "Página anterior",
+}

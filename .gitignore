@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/run_daily.log
+.claude/settings.local.json
